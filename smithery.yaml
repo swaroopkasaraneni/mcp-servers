@@ -1,19 +1,16 @@
----
-name: math-mcp-server
-version: "1.0.0"
-description: "A simple MCP server for performing basic math operations."
-author: "swaroop"
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
 
-runtime:
-  client: cursor
-  transport: stdio
-  entrypoint: "math-mcp-server.py"
-
-network:
-  host: "0.0.0.0"
-  port: 5000
-
-dependencies:
-  python: "3.10"
-  pip: "latest"
-  requirements: "requirements.txt"
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    {}
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'python',
+      args: ['math-mcp-server.py'],
+      env: {}
+    })
+  exampleConfig: {}
