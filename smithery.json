@@ -1,0 +1,11 @@
+{
+  "name": "math-mcp-server",
+  "description": "A simple math MCP server for addition and multiplication.",
+  "version": "1.0.0",
+  "author": "swaroop",
+  "client": "cursor",
+  "entrypoint": "math-mcp-server.py",
+  "host": "0.0.0.0",
+  "port": 5000,
+  "transport": "stdio"
+}
