@@ -1,13 +1,15 @@
 name: math-mcp-server
-description: "A simple MCP server for performing basic math operations."
+description: A simple MCP server for performing basic math operations.
 version: "1.0.0"
 author: "swaroop"
+
 client: cursor
 entrypoint: math-mcp-server.py
 host: 0.0.0.0
 port: 5000
 transport: stdio
+
 dependencies:
-  - python: "3.10"
-  - pip: latest
-  - requirements.txt
+  python: "3.10"
+  pip: "latest"
+  requirements: requirements.txt
