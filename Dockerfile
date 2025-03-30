@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Command to run the MCP server
-CMD ["python", "math_server.py"]
+CMD ["python", "math-mcp-server.py"]
